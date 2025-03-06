@@ -1,4 +1,4 @@
-import { getWineRecommendation } from "@/services/deepseek";
+import { getWineRecommendationOpenAI } from "@/services/openAI";
 import { NextRequest, NextResponse } from "next/server";
 
 export async function POST(req: NextRequest) {
@@ -7,7 +7,7 @@ export async function POST(req: NextRequest) {
     const answers = await req.json();
 
     // Get the wine recommendation from DeepSeek
-    const recommendation = await getWineRecommendation(answers);
+    const recommendation = await getWineRecommendationOpenAI(answers);
 
     console.log("Recommendation:", recommendation);
 
