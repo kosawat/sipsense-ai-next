@@ -72,7 +72,7 @@ export default function ProtectedRoute({
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
                 placeholder="Password"
-                className="p-2 pr-10 border border-gray-300 rounded-lg mb-4 w-full max-w-xs"
+                className="p-2 pr-10 border border-gray-300 rounded-lg mb-4 w-full max-w-xs dark:text-gray-900"
               />
               <button
                 type="button"

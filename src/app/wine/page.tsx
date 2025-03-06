@@ -166,7 +166,7 @@ function WinePage() {
                     }))
                   }
                   placeholder="e.g., Steak or solo"
-                  className="w-full p-2 border border-gray-300 rounded-lg mb-4"
+                  className="w-full p-2 border border-gray-300 rounded-lg mb-4 dark:text-gray-900"
                 />
                 <button
                   onClick={() =>
@@ -229,7 +229,7 @@ function WinePage() {
                     setAnswers((prev) => ({ ...prev, country: e.target.value }))
                   }
                   placeholder="e.g., Germany"
-                  className="w-full p-2 border border-gray-300 rounded-lg mb-4"
+                  className="w-full p-2 border border-gray-300 rounded-lg mb-4 dark:text-gray-900"
                 />
                 <p className="text-lg text-gray-600 mb-4">
                   Which city? (Optional)
@@ -241,7 +241,7 @@ function WinePage() {
                     setAnswers((prev) => ({ ...prev, city: e.target.value }))
                   }
                   placeholder="e.g., Berlin"
-                  className="w-full p-2 border border-gray-300 rounded-lg mb-4"
+                  className="w-full p-2 border border-gray-300 rounded-lg mb-4 dark:text-gray-900"
                 />
                 <p className="text-lg text-gray-600 mb-4">
                   Anything else we should know? (Optional, e.g., region,
@@ -257,7 +257,7 @@ function WinePage() {
                     }))
                   }
                   placeholder="e.g., no bitter, love Tuscany, sulfite allergy"
-                  className="w-full p-2 border border-gray-300 rounded-lg mb-4"
+                  className="w-full p-2 border border-gray-300 rounded-lg mb-4 dark:text-gray-900"
                 />
                 <button
                   onClick={handleSubmit}
