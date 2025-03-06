@@ -40,7 +40,11 @@ export default function ProtectedRoute({
       const { success } = await res.json();
       if (success) {
         setIsAuthenticated(true);
-        localStorage.setItem(storageKey, "true");
+        // Store with timestamp for expiration
+        localStorage.setItem(
+          storageKey,
+          JSON.stringify({ authenticated: true, timestamp: Date.now() })
+        );
       } else {
         alert("Wrong password, try again!");
         setPassword("");
