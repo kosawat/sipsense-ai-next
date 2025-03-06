@@ -1,4 +1,5 @@
-import { getWineRecommendationOpenAI } from "@/services/openAI";
+import { getWineRecommendationGrok } from "@/services/grok";
+// import { getWineRecommendationOpenAI } from "@/services/openAI";
 import { NextRequest, NextResponse } from "next/server";
 
 export async function POST(req: NextRequest) {
@@ -7,7 +8,7 @@ export async function POST(req: NextRequest) {
     const answers = await req.json();
 
     // Get the wine recommendation from OpenAI
-    const recommendation = await getWineRecommendationOpenAI(answers);
+    const recommendation = await getWineRecommendationGrok(answers);
 
     console.log("Recommendation:", recommendation);
 
