@@ -6,7 +6,7 @@ export async function POST(req: NextRequest) {
     // Parse the request body
     const answers = await req.json();
 
-    // Get the wine recommendation from DeepSeek
+    // Get the wine recommendation from OpenAI
     const recommendation = await getWineRecommendationOpenAI(answers);
 
     console.log("Recommendation:", recommendation);
