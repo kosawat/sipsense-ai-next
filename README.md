@@ -1,24 +1,63 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# SipSense
+
+SipSense is a Next.js app that helps users discover drinks recommendations tailored to their preferences using AI models (Grok, OpenAI, DeepSeek). The app currently features a quiz for wine selection and demo pages for mixed drinks and whisky.
+
+## Features
+
+- Wine recommendation quiz powered by AI
+- Password-protected demo sections
+- Modern UI with Tailwind CSS
+- Supports Grok, OpenAI, and DeepSeek APIs
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
 
-```bash
+- Node.js (v18+ recommended)
+- API keys for Grok, OpenAI, and/or DeepSeek
+
+### Installation
+
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/your-username/sipsense-ai-next.git
+   cd sipsense-ai-next
+   ```
+
+2. Install dependencies:
+   ```sh
+   npm install
+   ```
+
+3. Create a `.env.local` file in the root directory and add your API keys:
+   ```
+   GROK_API_KEY=your_grok_api_key
+   OPEN_API_KEY=your_openai_api_key
+   DEEPSEEK_API_KEY=your_deepseek_api_key
+   APP_PASSWORD=your_demo_password
+   ```
+
+### Running the App
+
+Start the development server:
+```sh
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
+Visit [http://localhost:3000](http://localhost:3000) in your browser.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Usage
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- Click "Find My Wine" to take the quiz and get recommendations.
+- "Find My Mixed Drink" and "Find My Whisky" pages are coming soon.
+- Protected sections require a password (set via `APP_PASSWORD`).
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Project Structure
+
+- `src/app/` – Next.js app routes and pages
+- `src/services/` – API integration for Grok, OpenAI, DeepSeek
+- `src/components/` – UI components
+- `public/` and `favicon_io/` – Static assets
+
 
 ## Learn More
 
