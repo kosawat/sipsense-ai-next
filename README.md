@@ -20,7 +20,7 @@ SipSense is a Next.js app that helps users discover drinks recommendations tailo
 
 1. Clone the repository:
    ```sh
-   git clone https://github.com/your-username/sipsense-ai-next.git
+   git clone https://github.com/kosawat/sipsense-ai-next.git
    cd sipsense-ai-next
    ```
 
